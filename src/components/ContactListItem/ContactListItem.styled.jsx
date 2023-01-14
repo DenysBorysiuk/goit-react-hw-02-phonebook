@@ -1,14 +1,11 @@
 import styled from '@emotion/styled';
 
-export const Label = styled.label`
-  position: relative;
-  display: block;
+export const ContactText = styled.span`
   font-size: 18px;
-  font-weight: 500;
+  margin-right: 20px;
 `;
 
-export const FormBtn = styled.button`
-  display: block;
+export const ContactBtn = styled.button`
   background-color: transparent;
   border: 1px solid grey;
   border-radius: 5px;
