@@ -43,7 +43,7 @@ export class App extends Component {
   };
 
   handleChange = evt => {
-    this.setState({ [evt.target.name]: evt.target.value });
+    this.setState({ filter: evt.target.value });
   };
 
   getVisibleContacts = () => {

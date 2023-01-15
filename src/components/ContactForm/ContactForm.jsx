@@ -1,41 +1,7 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik } from 'formik';
 import * as yup from 'yup';
 import PropTypes from 'prop-types';
-import styled from '@emotion/styled';
-import { Label, FormBtn } from './ContactForm.styled';
-
-const FormWrap = styled(Form)`
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 400px;
-  padding: 8px;
-  border: 1px solid grey;
-  border-radius: 3px;
-  box-shadow: 0px -2px 5px 3px rgba(0, 0, 0, 0.33);
-`;
-
-const Input = styled(Field)`
-  display: block;
-  margin-top: 4px;
-  margin-bottom: 25px;
-  outline: none;
-  border-radius: 3px;
-  border: 1px solid grey;
-  &:hover,
-  &:focus {
-    border-color: transparent;
-    box-shadow: 0px 0px 4px 1px rgba(2, 52, 201, 1);
-  }
-`;
-
-const Message = styled(ErrorMessage)`
-  position: absolute;
-  display: block;
-  top: 45px;
-  left: 0;
-  color: red;
-  font-size: 11px;
-`;
+import { FormWrap, Input, Message, Label, FormBtn } from './ContactForm.styled';
 
 const schema = yup.object().shape({
   name: yup
